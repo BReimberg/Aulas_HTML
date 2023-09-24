@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulários</title>
+    </head>
+    
+    <body>
+
+        <!--- Formulário é representado pela tag <form></form>, e é utilizado junto a outras tags como:
+            <input>
+            <textarea>
+            <button>
+            <select>
+            <fieldset>
+            <label> etc...
+
+        Fomra de uso:
+
+            <form> -> Form com tipo de envio
+                <label for="nome"> Nome </label> -> Título
+                <input type="text" id="nome"> -> Campo
+            </form> -. Form com tipo de envio
+        -->
+
+        <!--
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
+        </form>
+        -->
+
+        <form>
+
+        <div>
+            <label for="name">Name
+                <input type="text" id="name" />
+            </label>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email
+                <input type="email" id="email" required />
+            </label>
+        </div>
+        <br>
+        <!--Tipo radio é para escolher apenas uma opção-->
+        <br>
+        <div>
+            <label>
+                Selecione um Valor: <br>
+            </label>
+
+            <label>
+                <input type="radio" name="preco" value="150"> R$ 150,00
+            </label>
+           <br>
+            <label>
+                <input type="radio" name="preco" value="200"> R$ 200,00
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="preco" value="250"> R$ 250,00
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="preco" value="300"> R$ 300,00
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>
+                Selecione os Valores: <br>
+            </label>
+
+            <label>
+                <input type="checkbox" name="preco" value="150"> R$ 150,00
+            </label>
+           <br>
+            <label>
+                <input type="checkbox" name="preco" value="200"> R$ 200,00
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="preco" value="250"> R$ 250,00
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="preco" value="300"> R$ 300,00
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="preco" value="350"> R$ 350,00
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="preco" value="400"> R$ 400,00
+            </label>
+        </div>
+            <br>
+            <label>
+                Selecione o Município: <br> 
+                <select>
+                    <option value="" selected>Selecione um Município</option>
+                    <option value="Chapeco">Chapecó</option>
+                    <option value="Florianopolis">Florianópolis</option>
+                    <option value="Brusque">Brusque</option>
+                    <option value="Criciuma">Criciúma</option>
+                </select>
+            <br><br>
+                Selecione o Time: 
+            <br>
+                <select>
+                    <option value="" selected>Selecione um Time</option>
+                    <option value="Chapecoense">Chapecoense</option>
+                    <option value="Avai">Avaí</option>
+                    <option value="Brusque">Brusque</option>
+                    <option value="Criciuma">Criciúma</option>
+                </select>
+            </label>
+            <br><br>
+
+            <label> Digite seu comentário: <br>
+                <textarea></textarea>
+            </label>
+            <br>
+            <button>Enviar</button>
+        </form>
+
+    </body>
+</html>
